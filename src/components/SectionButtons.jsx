@@ -1,8 +1,9 @@
-function SectionButtons({ langs }) {
+function SectionButtons({ langs, setActiveLang, activeLang }) {
     return (
         <div className="d-flex justify-content-center flex-wrap" >
             {langs.map((lang) => (
-                <button key={lang.id} className="btn btn-primary m-2">
+                <button key={lang.id} className={`btn m-2 ${activeLang.id === lang.id ? "btn-warning" : "btn-primary"
+                    }`} onClick={() => setActiveLang(lang)}>
                     {lang.title}
                 </button>
             ))}
