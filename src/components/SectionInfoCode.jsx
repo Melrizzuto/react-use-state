@@ -7,7 +7,7 @@ function SectionInfoCode({ activeLang }) {
                     <p>{activeLang.description}</p>
                 </>
             ) : (
-                <h3>Nessun linguaggio selezionato</h3>
+                <h3 className="text-center">Nessun linguaggio selezionato</h3>
             )}
         </div>
     );
