@@ -4,7 +4,7 @@ import SectionInfoCode from "./SectionInfoCode";
 import languages from "../data/languages";
 
 function Main() {
-    const [activeLang, setActiveLang] = useState(languages[0])
+    const [activeLang, setActiveLang] = useState(null)
 
     return (
         <main className="container d-flex justify-content-center flex-column my-4">
