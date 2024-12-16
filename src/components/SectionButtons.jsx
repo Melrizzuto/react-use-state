@@ -1,8 +1,11 @@
-function SectionButtons() {
+function SectionButtons({ langs }) {
     return (
-        <div className="d-flex justify-content-center flex-wrap">
-
-            <button >ciao sono il pulsante interattivo</button>
+        <div className="d-flex justify-content-center flex-wrap" >
+            {langs.map((lang) => (
+                <button key={lang.id} className="btn btn-primary m-2">
+                    {lang.title}
+                </button>
+            ))}
         </div>
     );
 }
