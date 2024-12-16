@@ -1,8 +1,8 @@
-function SectionInfoCode({ langs }) {
+function SectionInfoCode({ activeLang }) {
     return (
         <div className="card mt-4 mx-auto p-3">
-            <h2>{langs.title}</h2>
-            <p>{langs.description}</p>
+            <h2>{activeLang.title}</h2>
+            <p>{activeLang.description}</p>
         </div>
     );
 }

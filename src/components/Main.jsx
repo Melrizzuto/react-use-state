@@ -13,7 +13,9 @@ function Main() {
                 setActiveLang={setActiveLang}
                 activeLang={activeLang}
             />
-            <SectionInfoCode langs={languages} />
+            <SectionInfoCode
+                langs={languages}
+                activeLang={activeLang} />
         </main>
     );
 }
